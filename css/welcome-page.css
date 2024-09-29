@@ -1,0 +1,140 @@
+body {
+    color: #FFF;
+    background-color: #070809;
+    background-image: url(/img/background-welcome.png);
+    background-size: cover;
+}
+
+.language-selector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.language-selector h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.language-selector .container {
+    position: relative;
+}
+
+.container {
+    width: 90%;
+}
+
+.container-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.language-selector .snowitem-1 {
+    width: 40px;
+    height: 40px;
+}
+
+.language-selector .snowitem-2 {
+    width: 70px;
+    height: 70px;
+}
+
+.container-buttons a {
+    font-size: 26px;
+}
+
+.language-button::before {
+    content: "";
+    display: inline-block;
+    width: 30px;  /* Ширина изображения */
+    height: 20px; /* Высота изображения */
+    background-image: url(/img/flags/flag-en.png);
+    background-size: contain; /* Масштабирование изображения */
+    background-repeat: no-repeat; /* Избегать повторения */
+    margin-right: 8px; /* Отступ справа от текста */
+    vertical-align: middle; /* Вертикальное выравнивание */
+}
+
+.language-button.en::before {
+    background-image: url(/img/flags/flag-en.png);
+}
+
+.language-button.ru::before {
+    background-image: url(/img/flags/flag-ru.png);
+}
+
+.language-button.es::before {
+    background-image: url(/img/flags/flag-es.png);
+}
+
+.container-buttons a {
+    border: 2px solid #FFF;
+    padding: 11px 104px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.container-buttons a:hover {
+    background-color: #FFF;
+    color: #070809;
+    padding: 11px 134px;
+}
+
+.container-buttons a:active {
+    background-color:#070809;
+    color: #FFF;
+    padding: 11px 134px;
+}
+
+/* Ключевые кадры для вращения */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.snowitem-1 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    animation: rotate 10s linear infinite; /* Анимация вращения */
+    opacity: 0.3;
+    z-index: -4;
+}
+
+.snowitem-2 {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    animation: rotate 12s linear infinite; /* Анимация вращения с разной скоростью */
+    opacity: 0.2;
+    z-index: -4;
+}
+
+@media (max-width: 450px) {
+    .container-buttons a:hover {
+        background-color: #FFF;
+        color: #070809;
+        padding: 11px 0;
+        width: 100%;
+    }
+    .language-selector h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .container-buttons a {
+        font-size: 18px;
+        padding: 11px 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+header .logo {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: #070809;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.common-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.title-wrapper {
+    margin-bottom: 60px;
+}
+
+.title {
+    color: #FFF;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    margin-bottom: 42px;
+}
+
+.subtitle {
+    color: #8E8E9C;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    letter-spacing: 3px;
+}
+
+/* --------------- Header --------------- */
+
+header {
+    width: 100%;
+    color: aliceblue;
+    padding: 30px 0;
+}
+
+header img {
+    display: none;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 60px;
+}
+
+.header__nav a {
+    color: #FFF; 
+    transition: all 0.5s;
+}
+
+.header__nav a:hover {
+    color: #464646; 
+}
+
+.hide {
+    display: none;
+}
+
+/* --------------- Main --------------- */
+
+/* --------------- Welcome --------------- */
+
+.welcome {
+    min-height: 600px;
+    height: 100vh;
+    padding: 195px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+    background-color:  #070809;
+    
+    background: 
+    linear-gradient(to top, #070809, transparent 15%),
+    linear-gradient(to bottom, #070809, transparent 15%),
+
+        url("../img/main-background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome__heading {
+    max-width: 600px;
+    font-size: 45px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0 auto 100px;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1);
+}
+
+.welcome__paragraph {
+    font-size: 21px;
+    line-height: 1.5;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 1);
+}
+
+.welcome__links {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link-primary {
+    display: inline-block;
+    font-size: 26px;
+    text-transform: uppercase;
+    background-color: #070809;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: 1px #404040 solid;
+    padding: 11px 31px;
+    transition: all 0.5s;
+}
+
+.link-primary:hover {
+    background-color: #a7a7a7;
+    color: rgb(0, 0, 0);
+}
+
+
+.link-primary:active {
+    background-color: #000000;
+    color: #FFF;
+}
+
+.link {
+    display: inline-block;
+    color: white;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    border: 1px white solid;
+    padding: 11px 31px;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    border-color: rgb(255, 255, 255, 0.5);
+}
+
+.link:active {
+    background-color: rgb(0, 0, 0, 0.2);
+    border-color: rgb(0, 0, 0, 0.5);
+}
+
+/* --------------- Info --------------- */
+
+.info {
+    color: #FFF;
+    padding: 140px 0;
+}
+
+.container__info {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.item-info.show {
+    opacity: 1;
+}
+
+.planeta__img {
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+}
+
+.info__subtitle {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.info__heading {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.info__paragraph {
+    width: 500px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.info__links .link-primary {
+    background-color: #FFF;
+    color: #070809;
+}
+
+.info__links {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.link-primary.info-btn {
+    display: inline-block;
+    align-self: flex-end;
+    font-size: 22px;
+    color: #FFF;
+    background-color: #070809;
+    border: 1px solid #FFF;
+}
+
+.link-primary.info-btn.active {
+    background-color: #FFF;
+    color: #070809;
+    border: 1px solid #070809;
+}
+
+/* --------------- Advantages --------------- */
+
+.advantages {
+    padding: 100px 0;
+}
+
+.advantages .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    color: #FFF;
+}
+
+.advantages .card {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    padding: 35px 15px 45px;
+    border-bottom: 1px solid #DCEBF7;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.advantages .card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Увеличение тени при наведении */
+}
+
+.advantages .card p {
+    transition: all .5s ease-in-out;
+}
+
+.advantages .card:hover p {
+    color: #FFF;
+}
+
+.advantages .card img {
+    border-radius: 5px;
+    width: 94px;
+    height: 94px;
+    margin: auto 0;
+    object-fit: contain;
+    filter: brightness(0.8); 
+}
+
+.advantages .card h4 {
+    margin-bottom: 15px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.advantages .card p {
+    color: #676770;
+    line-height: 2;
+}
+
+.card__desc {
+    margin-left: 30px;
+}
+
+.card__desc h4 {
+    text-align: left;
+}
+
+.card__desc p {
+    text-align: justify;
+}
+
+/* --------------- Contracts --------------- */
+
+.contracts {
+    color: #FFF;
+    text-align: right;
+    padding: 120px 0;
+    margin: 120px 0;
+    position: relative;
+}
+
+.contracts .container {
+    display: flex;
+}
+
+.contracts .blur-darken-image {
+    position: absolute;
+    height: 740px;
+    width: 740px;
+    left: 0;
+    top: 0;
+    z-index: -4;
+}
+
+.contracts__heading {
+    max-width: 45%;
+    margin-left: auto;
+    font-size: 55px;
+    margin-bottom: 45px;
+}
+
+.contracts__paragraph {
+    margin-left: auto;
+    line-height: 1.4;
+    max-width: 35%;
+    margin-bottom: 75px;
+}
+
+.contracts__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contracts__links a {
+    display: inline-block; /* Можно оставить inline-block */
+    background-color: #FFF;
+    color: #070809;
+    align-self: flex-end; /* Предотвращает растягивание ссылок */
+    padding: 10px 20px; /* Добавьте отступы, если необходимо */
+    text-decoration: none; /* Уберите подчеркивание, если необходимо */
+    border-radius: 5px; /* Добавьте скругление углов, если необходимо */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Добавьте тень, если необходимо */
+}
+
+/* --------------- Footer --------------- */
+
+.footer__container {
+    color: #a7a7a7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px 40px;
+}
+
+.footer__container > * {
+    width: 100%;
+    min-width: 220px;
+
+}
+
+.footer__desc {
+    padding: 80px 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.footer__desc h4 {
+    margin-bottom: 25px;
+    color: #676770;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+
+.footer a {
+    color: #a7a7a7;
+    font-size: 18px;
+    line-height: 20px;
+    transition: all 0.5s;
+}
+
+.footer a:hover {
+    color: #464646;
+}
+
+.footer li {
+    position: relative;
+    height: 30px;
+}
+
+.footer__desc li + li {
+    margin-top: 6px;
+}
+
+.footer__social img {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.footer__social li::after {
+    width: calc(100% - 35px);
+} 
+
+.footer__copy {
+    border-top: 1px solid #404040;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer__copy p {
+    color: #9E9E9E;
+}
+
+.hide {
+    display: none;
+}

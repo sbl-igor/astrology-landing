@@ -1,0 +1,16 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 815" width="40" height="30">
+	<title>Новый проект</title>
+	<defs>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1" ><feDropShadow dx="-23.382685902179844" dy="13.499999999999998" stdDeviation="5.416666666666667" flood-color="#000000" flood-opacity=".6"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f2" ><feDropShadow dx="-23.382685902179844" dy="13.499999999999998" stdDeviation="5.416666666666667" flood-color="#000000" flood-opacity=".6"/></filter>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f3" ><feDropShadow dx="-23.382685902179844" dy="13.499999999999998" stdDeviation="5.416666666666667" flood-color="#000000" flood-opacity=".6"/></filter>
+	</defs>
+	<style>
+		.s0 { filter: url(#f1);fill: #ffffff } 
+		.s1 { filter: url(#f2);fill: #ffffff } 
+		.s2 { filter: url(#f3);fill: #ffffff } 
+	</style>
+	<path id="Background" class="s0" d="m1070 15v120h-1060v-120z"/>
+	<path id="Layer 1" class="s1" d="m1070 341v120h-1060v-120z"/>
+	<path id="Layer 1 copy" class="s2" d="m1070 669v120h-1060v-120z"/>
+</svg>
