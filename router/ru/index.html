@@ -12,30 +12,43 @@
 <body>
     <header id="header" class="header">
         <div class="container header__container">
-            <h1 class="logo">AstrologyBots</h1>
-            <nav id="nav-menu" class="header__nav">
+            <h1 class="logo">
+                <a href="/" title="Астрология, нумерология, судьба — ваш персональный прогноз">
+                    LumenAstra
+                </a>
+            </h1>
+            <nav id="nav-menu" class="header__nav" aria-label="Главное меню">
                 <ul>
-                    <li><a href="#bots">Наши боты</a></li>
-                    <li><a href="#info">Описание</a></li>
-                    <li><a href="#footer">Контакты</a></li>
+                    <li><a href="#bots">🔮 Наши услуги</a></li>
+                    <li><a href="#info">✨ Узнать о себе</a></li>
+                    <li><a href="#footer">📲 Связаться с нами</a></li>
                 </ul>
             </nav>
-            <img id="burger-menu" class="burger-menu" src="../../img/sol-icon.png" alt="sol">
+            <img id="burger-menu" class="burger-menu" src="../../img/sol-icon.png" alt="Открыть меню навигации">
         </div>
     </header>
     <main>
 
-        <section class="welcome">
+        <section class="welcome" id="welcome">
             <div class="container" data-aos="fade-up" data-aos-delay="300">
-                <h2 class="welcome__heading" data-aos="fade-up">Пойми себя и свой путь в жизни</h2>
-                <p class="welcome__paragraph">Добро пожаловать в мир, где наука о звездах, тайны ладоней и магия чисел встречаются!
+                <h2 class="welcome__heading" data-aos="fade-up">
+                    ✨ Узнай свою судьбу 
+                </h2>
+                <p class="welcome__paragraph">
+                    Добро пожаловать в мир, где <strong>наука о звёздах</strong>, <strong>магия чисел</strong> и <strong>интуитивные знания</strong> соединяются, чтобы раскрыть ваше истинное предназначение. 
+                    Получите персональный прогноз и рекомендации от наших ботов — <em>прямо сейчас</em>.
                 </p>
                 <div class="welcome__links">
-                    <a href="#info" class="link-primary">Узнать больше!</a>
-                    <a href="#bots" class="link">Наши боты</a>
+                    <a href="#info" class="link-primary" title="Подробнее о наших астрологических и нумерологических услугах">
+                        🔍 Узнать больше
+                    </a>
+                    <a href="#bots" class="link" title="Посмотреть всех доступных астроботов">
+                        🤖 Наши услуги
+                    </a>
                 </div>
             </div>
         </section>
+        
 
         <section id="info" class="info" data-aos="fade-up" data-aos-delay="300">
             <div class="container container__info">
@@ -82,76 +95,79 @@
         <section id="bots" class="advantages common-section">
             <div class="container">
                 <div class="title-wrapper" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="title">Наши магические боты в Telegram</h3>
-                    <p class="subtitle">Получайте персональные предсказания, анализы и советы прямо в вашем Телеграм.
-                    </p>
+                    <h3 class="title">Ваши персональные проводники в мир эзотерики</h3>
+                    <p class="subtitle">Получайте персональные предсказания, анализы и советы прямо в вашем Телеграм и WhatsApp.</p>
                 </div>
                 <div class="cards-wrapper">
-                    <a href="#" class="card" data-aos="fade-right" data-aos-delay="200">
-                        <img src="../../img/icons-bot/astrology-icon.png" alt="astrology">
+                    <a href="https://www.whatsapp.com/" class="card" data-aos="fade-right" data-aos-delay="200">
+                        <img src="../../img/icons-bot/astrology-icon.png" alt="Астрология">
                         <div class="card__desc">
-                            <h4>Telegram-бот по астрологии</h4>
-                            <p>Получите персональные астрологические прогнозы и советы, основанные на вашем знаке зодиака и натальной карте. Наш бот поможет вам понять влияние планет на вашу жизнь и сделать правильный выбор.</p>
+                            <h4>Астрологические консультации</h4>
+                            <p>Получайте индивидуальные астрологические прогнозы и советы, основанные на вашем знаке зодиака и натальной карте. Узнайте, как планеты влияют на вашу судьбу, и сделайте осознанный выбор.</p>
                         </div>
                     </a>
-                    <a href="#" class="card" data-aos="fade-right" data-aos-delay="200">
-                        <img src="../../img/icons-bot/numerology-icon.png" alt="numerology">
+                    <a href="https://www.whatsapp.com/" class="card" data-aos="fade-right" data-aos-delay="300">
+                        <img src="../../img/icons-bot/numerology-icon.png" alt="Нумерология">
                         <div class="card__desc">
-                            <h4>Telegram-бот по нумерологии</h4>
-                            <p>Откройте тайны чисел и узнайте, как они влияют на вашу судьбу с помощью нашего нумерологического бота. Получайте точные прогнозы и рекомендации, основанные на вашем дне рождения и имени.</p>
+                            <h4>Нумерологический портрет</h4>
+                            <p>Узнайте, какие тайны скрывают ваши числа. Наш бот предоставит точные нумерологические анализы и рекомендации, основанные на вашей дате рождения и полном имени.</p>
                         </div>
                     </a>
-                    <a href="#" class="card" data-aos="fade-right" data-aos-delay="200">
-                        <img src="../../img/icons-bot/hyrology-icon.png" alt="hyrology">
+                    <a href="https://www.whatsapp.com/" class="card" data-aos="fade-right" data-aos-delay="400">
+                        <img src="../../img/icons-bot/hyrology-icon.png" alt="Хирология">
                         <div class="card__desc">
-                            <h4>Telegram-бот по хирологии</h4>
-                            <p>Разгадайте секреты своей ладони с нашим хирологическим ботом и узнайте больше о своем характере и будущем. Наш бот проанализирует линии на ваших руках и предоставит детальный отчет.</p>
+                            <h4>Хирологическое исследование</h4>
+                            <p>Проанализируйте линии своей ладони с помощью бота. Получите персональный отчёт о чертах характера, судьбе и потенциальных событиях вашей жизни.</p>
                         </div>
                     </a>                
                 </div>
             </div>
         </section>
+        
 
         <section class="contracts common-section">
             <div class="container">
-                <img src="../../img/hands-ball.png" alt="hands-ball" class="blur-darken-image">
-                <div class="contracts-flex">
-                    <h2 class="contracts__heading">Загляните в свое Будущее</h2>
-                    <p class="contracts__paragraph">Представьте себе, что вы держите в руках ключ к разгадке своих самых глубоких тайн и возможностей. Астрология, нумерология и хирология предоставляют вам этот ключ, открывая двери к самопознанию и процветанию.
-                    </p>
-                    <div class="contracts__links">
-                        <a href="#bots" class="link-primary">Перейти к ботам</a>
-                    </div>
+              <img src="../../img/hands-ball.png" alt="Хрустальный шар в руках" class="blur-darken-image">
+              <div class="contracts-flex">
+                <h2 class="contracts__heading">Загляните в своё Будущее</h2>
+                <p class="contracts__paragraph">
+                  Представьте, что в ваших руках — хрустальный шар, отражающий не только прошлое, но и возможные пути будущего. Астрология, нумерология и хирология — это ваши ключи к самопознанию, ясности и внутренней силе.
+                </p>
+                <div class="contracts__links">
+                  <a href="#bots" class="link-primary">Наши услуги</a>
                 </div>
+              </div>
             </div>
-        </section>
+          </section>          
 
     </main>
 
     <footer id="footer" class="footer">
         <div class="footer__desc">
-            <div class="container footer__container">
-                <div class="footer__about" data-aos="fade-up" data-aos-delay="400">
-                    <h4>О нас</h4>
-                    <p>Независимо от того, ищете ли вы ответы на волнующие вопросы или стремитесь к самосовершенствованию, у нас есть всё необходимое для вашего духовного роста и благополучия. Переходите к нашим ботам и начните свое путешествие к истинному "Я" уже сегодня!
-                    </p>
-                </div>
-                <div class="footer__links" data-aos="fade-up" data-aos-delay="400">
-                    <h4>Полезные ссылки</h4>
-                    <ul>
-                        <li><a class="link_top" href="#header">Вернуться в начало</a></li>
-                        <li><a href="https://www.instagram.com/">Наш инстаграм</a></li>
-                    </ul>
-                </div>
+          <div class="container footer__container">
+            <div class="footer__about" data-aos="fade-up" data-aos-delay="400">
+              <h4>О нас</h4>
+              <p>
+                Мы создаём пространство, где древняя мудрость встречается с личным подходом. Наши проводники помогают вам раскрыть потенциал, разобраться в чувствах и обрести внутреннюю гармонию. Присоединяйтесь — и сделайте первый шаг навстречу себе.
+              </p>
             </div>
+            <div class="footer__links" data-aos="fade-up" data-aos-delay="400">
+              <h4>Полезные ссылки</h4>
+              <ul>
+                <li><a class="link_top" href="#header">Вернуться в начало</a></li>
+                <li><a href="https://www.instagram.com/">Наш Instagram</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-
+      
         <div class="footer__copy">
-            <div class="container">
-                <p>&copy; 2024 AstrologyBots. Все права защищены.</p>
-            </div>
+          <div class="container">
+            <p>&copy; 2025 LumenAstra. Все права защищены.</p>
+          </div>
         </div>
-    </footer>
+      </footer>
+      
     <script src="../../index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
